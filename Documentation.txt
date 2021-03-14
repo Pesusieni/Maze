@@ -1,0 +1,69 @@
+
+
+Henkilötiedot
+Otsikko; Mickey Ekorth, 78798F, Tik, 2008, 20.4.2011.
+
+Yleiskuvaus
+Labyrintti, vaikeusaste keskivaikea
+
+Käyttöohje
+Ohjelma vastaanottaa ainostaan JButton kaskyjä ja arrow näppäiden komentoja.
+
+Ohjelman rakenne
+Luokat ovat Gui, Main, Mazealgo,Maze,SaveLoad
+Gui:
+rakentaa grafisen käyttöliitymän
+
+Main:
+aja koko ohjelman
+
+Mazealgo:
+rakenta tyhjästä mazesta pelatavan mazin.
+
+SaveLoad:
+talentaa yhden mazen tai lataa yhden mazen
+
+Algoritmit
+Maze rakenetaan deep first search algoritmin avulla se tekee yhden polun niin pitkälle kuin se on mahdolista ja siten mene rekursivisesti takas ja täydentä labyrintiä uusila poluilla.
+
+
+Tietorakenteet
+taulukot toimivat erinomaisesi kun labyrintti on statinen
+
+Tiedostot
+Ohjelma talenttuu teksti tiedostoon jossa talenettaan labyrinttin koko
+pelejana position ja seed jolla labyrintti tehtiin.
+vaihtamalla pelajan coordinateja teksti tiedostossa voi "fuskata"
++ hardmode ei viellä ole täydelinen tallenuksen suuhteen koska sitä ei voi viellä tallenta "hardmodena"
+
+Ohjelman tunnetut puutteet ja viat
+Huonoja asioita:
+Hard mode ei voi tallentaa hardmodena.
+Tip/solution algorithm void "kiertää ympäri" 2x2 ruudussa joka tarkoita että se kuulu "oikeaseen reittiin" mikä voi näyttä vähän hölmöltä mutta se on kuitenkin oikea reitti.
++ se voi viellä buga mutta en ole pystynyt toistaman sitä viellä kuin muutaman kerran.
+cheacksum ei ole implementoitu txt tiedostoon jotta sitä ei voisi helposti manipuloida.
+Hardmode voi perjatessa overflowa koska aina kun siiryt se pirtä aluen uudestaan vaikka osa siitä olis piiretty jo.
+
+Hyviä asioita:
+Hardmode on kiva ja helppo ymmärtä.
+pelin on helppo päästä jyvälle
+olen eritäin tytyväinen labyrinti teko algoritmiin.
+
+Poikkeamat suunnitelmasta
+aika meni huomatavsti ennemän ali/yli kulku siltoihin kuin ajatelin.
+ja solution algoritmis oli virhe joka oli vaikea löytää.
+
+
+Toteutunut työjärjestys ja aikataulu
+aloitin aika rauhalisesti lukien wikiä ja koodaten aika vähän, sitten minä aloitin koodamisen kunnolla kuin olin saanut ritävästi tietoa aihestaa.
+Arvio lopputuloksesta
+olen hyvin tytyväinen ohjelmaan mutta olisin tietysti viellä halunut hiotta  
+solution algoritmi ja documenttia ennemän mutta asia on niin että nyt sain 
+solution algoritmin valmiks sairastumisen jälkeen ja se kuului tärkeisimpiin osiin 
+
+muuten olen hyvin tyytyväinen ohjelmaan, tein ensi Guin valmiks jotta pystyn koko ajan tekemään ajoja ja arvioida miten algoritmit toimivat ja onko ne edes lähellä sitä oikea loputulosta mitä etsin. sanoisin että meni ehkä huomatavasti ennemän aika ajoihin kuin ajatelin mutta se on hyvä asia olen eliminonoinut bugeja huomatavasti paljon koska ajoja on tehty yli 100.
+
+Viitteet
+http://en.wikipedia.org/wiki/Depth-first_search
+http://www.astrolog.org/labyrnth/algrithm.htm
+Liitteet
